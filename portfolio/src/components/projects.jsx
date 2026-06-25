@@ -7,21 +7,21 @@ const PROJECTS_DATA = [
     title: 'Ads CTR Prediction Engine',
     tags: ['SaaS', 'App', 'Vite'],
     description: 'Designed and deployed an AI-driven click-through rate prediction system, improving ad performance insights through advanced machine learning models.',
-    visitLink: '#'
+    visitLink: 'https://ai-ml-project-sem-4.vercel.app/#'
   },
   {
     id: 'interviewly',
     title: 'Vision Fit – AI-Powered Fitness Tracker',
     tags: ['AI', 'NextJS', 'NodeJS', 'Socket.IO'],
     description: 'Built a real-time fitness tracking web app using React and computer-vision–based pose detection to count reps and provide form-feedback.',
-    visitLink: '#'
+    visitLink: 'https://dit-project-p14r-e1qh767cr-amrit2005-devs-projects.vercel.app/#'
   },
   {
     id: 'edlearn',
-    title: 'Voice Assistant',
+    title: 'Amazon Bedrock Knowledge Base',
     tags: ['GCP', 'Vite', 'TTS', 'NLP'],
-    description: 'Developed a voice-activated agent capable of executing tasks via verbal commands.',
-    visitLink: '#'
+    description: 'Amazon Bedrock Knowledge Base is an AWS service that connects your documents to AI models. It enables chatbots and AI assistants to provide accurate, context-aware answers using your own data instead of relying only on general knowledge.',
+    visitLink: 'https://github.com/Amrit2005-dev/Amazon-Bedrock-Knowledge-Bases#'
   }
 ]
 
