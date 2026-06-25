@@ -1,0 +1,107 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and text vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 6% 80px;
+    min-height: calc(100vh - 64px);
+    gap: 36px;
+    background-color: var(--bg-color);
+    padding-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* RIGHT — Photo (Moved to top via flex ordering) */
+.hero-right {
+    flex-shrink: 0;
+    order: -1;
+    /* Display image above text */
+}
+
+.hero-photo-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    /* Make photo perfectly circular */
+    overflow: hidden;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 0 30px var(--accent-glow), 0 10px 30px var(--shadow-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Soft lime green glow */
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* LEFT — Text Content Area */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 650px;
+}
+
+.hero-name {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 200;
+    color: var(--text-color);
+    line-height: 1.0;
+    margin-bottom: 16px;
+}
+
+.hero-roles {
+    font-size: 1rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.role-green {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.hero-bio {
+    color: var(--text-secondary-darker);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 36px;
+    max-width: 600px;
+}
+
+/* Social Buttons */
+.hero-socials {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    /* Pill shape */
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.social-btn:hover {
+    border-color: var(--accent-color);
+    background-color: var(--accent-glow);
+    transform: translateY(-2px);
+}

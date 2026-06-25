@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    position: sticky;
+    border-radius: 10%;
+
+    gap: 16px;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Logo */
+.navbar-logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: -0.5px;
+}
+
+.navbar-logo span {
+    color: var(--accent-color);
+    /* green dot */
+}
+
+/* Links */
+.navbar-links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-left: 500px;
+}
+
+.navbar-links a {
+    color: var(--navbar-link-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+    color: var(--navbar-link-hover);
+}
+
+/* Buttons */
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 500px;
+}
+
+/* Green Contact Me button */
+.btn-contact {
+    border: 1px solid var(--btn-contact-border);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 999px;
+    /* pill shape */
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    background: transparent;
+}
+
+.btn-contact:hover {
+    opacity: 0.85;
+    background-color: var(--border-muted);
+}
+
+/* Dark </ship> button & Theme Button */
+.btn-ship {
+    background: transparent;
+    border: 1px solid var(--btn-ship-border);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btn-ship:hover {
+    border-color: var(--btn-ship-hover-border);
+    background-color: var(--border-muted);
+}
+
+.theme-icon {
+    flex-shrink: 0;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.btn-ship:hover .theme-icon {
+    transform: rotate(20deg);
+}
+
+.download {
+    background: transparent;
+    border: 1px solid var(--btn-ship-border);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+
+.download:hover {
+    border-color: var(--btn-ship-hover-border);
+    background-color: var(--border-muted);
+}
